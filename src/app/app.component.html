@@ -10,9 +10,12 @@
 <button [disabled] ="isDisabled">Using Property binding</button>
 
 <!-- Class binding-->
- <button [class.active]="isActive" [class.no-active]="!isActive">Cliclk Me</button>
- <button [class.active-border]="isActive" [class.no-active-border]="!isActive">Task</button>
- <button [class.apple]="fruitName == 'apple'">Fruit Ninja</button>
+ <button [class.active]="isActive" [class.no-active]="!isActive">Cliclk Me</button><br/>
+ <button [class.active-border]="isActive" [class.no-active-border]="!isActive">Task</button><br/>
+ <button [class.apple]="fruitName == 'apple'">Fruit Ninja</button><br/>
+
+ <!-- Style binding-->
+  <button [style.background]="isActive ? 'red' : 'green'">Red Button</button>
 
 
 <app-navbar></app-navbar>
