@@ -33,6 +33,9 @@
      <input type="text" (keyup.enter)="keyFilter()"/><br/>
      <input type="text" (keyup.a)="keyFilterA()"/><br/>
 
+     <!--Template variable-->
+     <input type="text" id="userInput" (keyup.enter)="keyUpFilter(user)" #user />
+
 
 <app-navbar></app-navbar>
 <app-header></app-header>

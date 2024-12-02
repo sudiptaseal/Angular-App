@@ -45,4 +45,7 @@ export class AppComponent {
   keyFilterA() {
     alert("a pressed")
   }
+  keyUpFilter(user: HTMLInputElement) {
+    console.log(user.value);
+  }
 }
