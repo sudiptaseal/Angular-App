@@ -16,6 +16,9 @@
 
  <!-- Style binding-->
   <button [style.background]="isActive ? 'red' : 'green'">Red Button</button>
+  <button [style.backgroundColor]="isActive ? 'red' : 'green'"
+    [style.border]="isActive? '5px solid yellow' :'5px solid green'"
+  >Background Color</button>
 
 
 <app-navbar></app-navbar>
