@@ -1,3 +1,19 @@
 <h1>Header</h1>
+
+<!-- String Interpolation-->
+<h2>{{title}}</h2>
+<p>{{1+1}}</p>
+
+<!-- Property binding and string interpolation-->
+<img [src]="imageUrl" alt="Satyajit ray"/>
+<button disabled="{{isDisabled}}"> Using string interpolation</button>
+<button [disabled] ="isDisabled">Using Property binding</button>
+
+<!-- Class binding-->
+ <button [class.active]="isActive" [class.no-active]="!isActive">Cliclk Me</button>
+ <button [class.active-border]="isActive" [class.no-active-border]="!isActive">Task</button>
+ <button [class.apple]="fruitName == 'apple'">Fruit Ninja</button>
+
+
 <app-navbar></app-navbar>
 <app-header></app-header>
