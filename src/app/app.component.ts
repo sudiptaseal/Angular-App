@@ -15,4 +15,34 @@ export class AppComponent {
   isDisabled = true;
   isActive : boolean = true;
   fruitName : String = 'apple';
+
+  buttonClick() {
+    alert("Hi");
+  }
+
+  logPrint() {
+    console.log("Mouse over")
+  }
+
+  keyUp() {
+    console.log("Key pressed");
+  }
+
+  keyUp2(event : object) {
+    console.log(event);
+  }
+
+  keyUp3(event : any) {
+    if(event.keyCode == 13){
+      alert("Enter key pressed")
+    }
+  }
+
+  keyFilter() {
+    alert("Enter key pressed")
+  }
+
+  keyFilterA() {
+    alert("a pressed")
+  }
 }

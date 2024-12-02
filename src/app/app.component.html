@@ -20,6 +20,19 @@
     [style.border]="isActive? '5px solid yellow' :'5px solid green'"
   >Background Color</button>
 
+  <!-- Event binding-->
+   <button (click)="buttonClick()">Click Me</button><br/>
+   <button (mouseover)="logPrint()">Log Print</button><br/>
+   <input type="text"  (keyup)="keyUp()"/><br/>
+
+  <!-- Event Filtering (js way)-->
+   <input type="text" (keyup)="keyUp2($event)" /><br/>
+   <input type="text" (keyup)="keyUp3($event)" /> <br/>
+
+    <!-- Event Filtering (angular way)-->
+     <input type="text" (keyup.enter)="keyFilter()"/><br/>
+     <input type="text" (keyup.a)="keyFilterA()"/><br/>
+
 
 <app-navbar></app-navbar>
 <app-header></app-header>
